@@ -1,2 +1,1 @@
-# CBC
-Central Bureau of Coding 
+# Spying Eye

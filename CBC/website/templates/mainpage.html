@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content%}
+  
+  <div class="hero">
+    <h1>Spying Eye</h1>
+    <img src= "{{url_for('static',filename='/images/cat.svg')}}" alt="Cat Image"/>
+    <p>Eyes on crime, Ears to the ground</p>
+  </div>
+  
+  <div class="about">
+    <div class="bg-wrapper"></div>
+    <h3>About</h3>
+    <p>"Watchful Eye" empowers residents and authorities alike, offering anonymous reporting and tracking of wanted criminals. With real-time notifications and secure authentication, safety and vigilance are at your fingertips.</p>
+  </div>
+
+  <div class="features">
+    <h3>Features</h3>
+    <div class="feature-item">
+      <h4>Anonymous Reporting</h4>
+      <p>Report suspicious activities without revealing your identity.</p>
+    </div>
+    <div class="feature-item">
+      <h4>Real-time Notifications</h4>
+      <p>Get instant alerts about nearby criminal activities.</p>
+    </div>
+    <div class="feature-item">
+      <h4>Secure Authentication</h4>
+      <p>Ensuring your safety with secure login and data protection.</p>
+    </div>
+  </div>
+
+  <div class="how-it-works">
+    <h3>How It Works</h3>
+    <ol>
+      <li>Sign up and create an account.</li>
+      <li>Log in to access features.</li>
+      <li>View the list of wanted criminals.</li>
+      <li>Report any suspicious activities anonymously.</li>
+      <li>Receive real-time notifications.</li>
+    </ol>
+  </div>
+
+  <div class="faqs" style ="background-color: aliceblue;">
+    <div class="faq-content">
+      <h3>FAQs</h3>
+      <div class="faq-item">
+        <h4>How do I report a suspicious activity?</h4>
+        <p>You can report any suspicious activities through the anonymous reporting form available after logging in.</p>
+      </div>
+      <div class="faq-item">
+        <h4>How are my reports kept anonymous?</h4>
+        <p>We do not store any personal information when you submit a report. Your identity remains confidential.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <h3>Contact Us</h3>
+    <form action="#">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 Watchful Eye. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Contact</a>
+    </div>
+  </footer>
+
+{%endblock%}
